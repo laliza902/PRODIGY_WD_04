@@ -68,7 +68,3 @@ pic3.addEventListener('mouseenter', function() {
 pic3.addEventListener('mouseleave', function() {
     video.pause();
 });
-
-
-
-
