@@ -1,0 +1,923 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body{
+    background-color: beige;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    background-color: rgba(171, 171, 171, 0.225);
+    z-index:1;
+}
+
+.navbar h1{
+    margin: 10px 23px;
+    color: rgb(84, 84, 84);
+}
+
+.navItems{
+    position: relative;
+    left: 50vw;
+}
+
+.navItems ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navItems ul li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+.navItems ul li a{
+    color: rgb(84, 84, 84);
+    text-decoration: none;
+    padding: 0 2vw;
+    cursor: pointer;
+}
+
+#Home{
+    height: 100vh;
+}
+
+.bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 13vh;
+}
+
+.bio p{
+    font-family: "Abel", sans-serif;
+    font-size: 40px;
+    margin: 15px 33px;
+    padding: 0px 59px;
+    color: rgb(84, 84, 84);
+}
+
+#para{
+    display: flex;
+    flex-direction: column;
+}
+
+#web{
+    color: black;
+}
+
+.wd {
+    text-shadow: 0 0 6px rgba(38, 35, 35, 0.5);
+}
+
+
+.bio img{
+    width: 20vw;
+    border-radius: 50%;
+    margin: 0 67px;
+    padding: 37px 0;
+    z-index: -1;
+}
+
+.bio img {
+    box-shadow: 0 0 15px 5px rgba(35, 34, 34, 0.5);
+}
+
+.popup-message {
+    width: 6vw;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    left: 95%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.connect{
+    display: flex;
+    position: relative;
+    top: 8vh;
+}
+
+.connect img{
+    width:7vh;
+    padding: 50px 30px;
+    position: relative;
+    left: 20vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    
+}
+
+#Skills h1{
+    color: black;
+    font-size: 50px;
+}
+
+.des{
+    display: flex;
+    z-index: -1;
+    padding: 10px 0;
+}
+
+.logos{
+    display: flex;
+}
+
+.ccp{
+    display: flex;
+}
+
+.hcj{
+    display: flex;
+}
+
+.logos img{
+    width: 11vw;
+    padding: 3px 30px;
+}
+
+#Projects{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Projects h1{
+    font-size: 50px;
+    color: black;
+    
+}
+
+.dev{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+#zozo{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 42px;
+    padding: 0 0;
+}
+
+.project-entry {
+    position: relative;
+}
+
+#myVideo {
+    position: absolute;
+    width: 60vw;
+    z-index: 1;
+    display: none;
+}
+ 
+#zozo h2{
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    color: black;
+}
+
+.pic1 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic1 img {
+    width: 40vw;
+    padding: 0;
+    margin: 40px 20px;
+    border: 2px solid black;
+}
+
+.pic1 img:hover {
+    display: none;
+}
+
+.pic1 {
+    position: relative;
+}
+
+#myVideo {
+    display: none;
+    width: 80vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.pic1:hover #myVideo,
+#myVideo:hover {
+    display: block;
+}
+
+
+
+.pic1 p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+}
+
+#ttt{
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 42px;
+    padding: 0 0;
+}
+
+#ttt h2{
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    color: black;
+}
+
+.pic2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 0;
+    padding: 0 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic2 img{
+    width: 40vw;
+    padding: 0 0;
+    margin: 40px 20px;
+    border: 2px solid black;
+    transition: opacity 0.3s ease;
+}
+
+.pic2 img :hover{
+    display: none;
+}
+
+.pic2 p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+}
+
+.pic2 {
+    position: relative;
+}
+
+#myVideo2 {
+    position: absolute;
+    width: 60vw;
+    z-index: 1;
+    display: none;
+}
+
+#myVideo2 {
+    width: 80vw;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.pic2:hover #myVideo2,
+#myVideo2:hover {
+    display: block;
+}
+
+#stopwatch{
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 42px;
+    padding: 0 0;
+}
+
+#stopwatch h2{
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    color: black;
+}
+
+.pic3{
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic3 img{
+    width: 40vw;
+    padding: 0 0;
+    margin: 40px 20px;
+    border: 2px solid black;
+}
+
+.pic3 p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+}
+
+#myVideo3 {
+   
+    position: absolute;
+    width: 60vw;
+    z-index: 1;
+    display: none;
+}
+
+.pic3 img:hover {
+    display: none;
+}
+
+.pic3 {
+    position: relative;
+}
+
+#myVideo3 {
+    width: 80vw;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pic3:hover #myVideo3,
+#myVideo3:hover {
+    display: block;
+}
+
+#ContactMe h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.Contactbox{
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.left p{
+    font-size: 30px;
+    margin: 36px 47px;
+    padding: 9px 1px;
+    color: rgb(84, 84, 84);
+
+}
+
+.left img{
+    width: 2vw;
+    margin: 10px 25px;
+    padding: 0 0;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+}
+
+.mail a{
+    text-decoration: none;
+    color: black;
+}
+
+.mail img {
+    width: 2vw;
+    margin: 10px 25px;
+    padding: 0;
+    animation: jiggle 0.1s infinite alternate;
+}
+
+@keyframes jiggle {
+    from {
+        transform: rotate(-5deg); 
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+
+.fone{
+    display: flex;
+    align-items: center;
+}
+
+.fone a{
+    text-decoration: none;
+    color: black;
+}
+
+.fone img{
+    width: 2vw;
+    margin: 10px 25px;
+    padding: 0;
+    animation: jiggle 0.1s infinite alternate;
+}
+
+@keyframes jiggle {
+    from {
+        transform: rotate(-5deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+
+.form-group input{
+    display: block;
+    border: 2px solid black;
+    padding: 1px;
+    width: 18vw;
+    margin: 11px auto;
+    border-radius: 5px;
+    background-color: rgba(59, 57, 57, 0.212);
+}
+
+.form{
+    margin: 0 70px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    width: auto;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width:1430px){
+    .connect{
+        display: flex;
+        position: relative;
+        top: 13vh;
+        max-width: 100vw;
+    }
+    
+    .connect img{
+        width:5vh;
+        padding: 50px 30px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:1220px)
+{
+    .navItems{
+        position: relative;
+        left: 47vw;
+    }
+}
+
+@media only screen and (max-width:1120px)
+{   
+    .navbar{
+        width: 100vw;
+    }
+
+    .navItems{
+        position: relative;
+        left: 42vw;
+    }
+}
+
+@media only screen and (max-width:950px)
+{
+    .bio p{
+        font-size: 30px;
+    }
+
+    .bio{
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-width:930px)
+{
+    .navbar{
+        width: 100vw;
+    }
+
+    .navItems {
+        position: relative;
+        left: 33vw;
+    }
+
+    .connect{
+        max-width: 100vw;
+    }
+    
+    .connect img{
+        width:5vh;
+        padding: 50px 30px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .bio p{
+        font-size: 30px;
+    }
+
+    .bio{
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-width:800px)
+{   
+    .navItems {
+        position: relative;
+        left: 30vw;
+    }
+
+    .logos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logos img{
+        padding: 17px 78px;
+    }
+
+    .connect img{
+        position: relative;
+        left: 7vw ;
+    }
+}
+
+@media only screen and (max-width:770px)
+{
+    .navItems{
+
+        position: relative;
+        left: 25vw;
+    }
+
+    .bio p{
+        font-size: 20px;
+    }
+
+    .bio{
+        height: 60vh;
+    }
+
+    .connect{
+        max-width: 100vw;
+    }
+
+    .connect img{
+        position: relative;
+        width: 5vh;
+    }
+
+    #Skills h1{
+        font-size: 38px;
+    }
+
+    .logos img{
+        width: 8vw;
+    }
+
+    #Projects h1{
+        font-size: 38px;
+    }
+
+    #zozo h2{
+        font-size: 22px;
+    }
+
+    #zozo p{
+        font-size: 15px;
+    }
+
+    #ttt h2{
+        font-size: 22px;
+    }
+
+    #ttt p{
+        font-size: 15px;
+    }
+
+    #stopwatch h2{
+        font-size: 22px;
+    }
+
+    #stopwatch p{
+        font-size: 15px;
+    }
+
+    #ContactMe h1{
+        font-size: 38px;
+    }
+    
+    .left p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:695px)
+{   
+    .navItems{
+        position: relative;
+        left: 20px;
+    }
+
+    .bio p{
+        font-size: 15px;
+    }
+
+    .connect img{
+        width: 8vw;
+    }
+
+    .navItems ul li a{
+        color: rgb(84, 84, 84);
+        text-decoration: none;
+        padding: 0 1vw;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:555px)
+{
+    .bio p{
+        font-size: 18px;
+    }
+
+    .connect img{
+        position: relative;
+        width: 3vh;
+        margin: 0 21px;
+        padding: 0 0;
+    }
+
+    #zozo h2{
+        font-size: 16px;
+    }
+
+    #zozo p{
+        font-size: 12px;
+    }
+
+    #ttt h2{
+        font-size: 16px;
+    }
+
+    #ttt p{
+        font-size: 12px;
+    }
+
+    #stopwatch h2{
+        font-size: 16px;
+    }
+
+    #stopwatch p{
+        font-size: 12px;
+    }
+
+    #ContactMe h1{
+        font-size: 38px;
+    }
+    
+    .left p{
+        font-size: 15px;
+    }
+
+    .logos img {
+        padding: 17px 66px;
+    }
+}
+
+
+@media only screen and (max-width:525px)
+{   
+    .navItems ul li a{
+        font-size: 17px;
+    }
+    .bio{
+        display: flex;
+        flex-direction:column-reverse
+    }
+
+    .bio img{
+        width: 28vw;
+        padding: 0 0;
+        position: relative;
+        top: -1vh;
+    }
+
+    .pic1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Contactbox{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-group input{
+        width: 30vw;
+        margin: 5px auto;
+    }
+
+    .connect{
+        max-width: 100vw;
+    }
+
+    .connect img{
+        position: relative;
+        /* left: 3vw; */
+        width: 3vh;
+        padding: 0px 19px;
+        margin: 0 0;
+    }
+
+    .logos{
+        max-width: 100vw;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .logos img {
+        padding: 17px 66px;
+    }
+}
+
+
+@media only screen and (max-width:510px)
+{   
+    .connect{
+        max-width: 100vw;
+    }
+
+    .connect img{
+        width: 5vw;
+    }
+}
+
+@media only screen and (max-width:465px) {
+    
+    .navbar{
+        width: 107vw;
+    }
+
+    .navbar h1{
+        display: none;
+    }
+
+    .navItems{
+        /* position: relative;
+        left: 48px; */
+        display: flex;
+        align-items: center;
+
+    }
+
+    .navItems ul li a{
+        font-size: 15px;
+        padding: 0 16px;
+    }
+
+    .bio img{
+        width: 40vw;
+    }
+
+    .connect{
+        position: relative;
+        left: 8vw;
+    }
+    .logos img {
+        padding: 17px 34px;
+    }
+
+    .bio #para{
+        text-align: center;
+    }
+
+    .bio p{
+        margin: 27px 12px;
+        padding: 0 0;
+    }
+
+    .container{
+        width: 100vw;
+    }
+
+    .pic1 img{
+        width: 57vw;
+    }
+
+    .pic1 img{
+        width: 70vw;
+    }
+
+    .pic2 img{
+        width: 70vw;
+    }
+
+    .pic3 img{
+        width: 70vw;
+    }
+
+    #stopwatch{
+        height: 35vh;
+    }
+
+    .mail img{
+        width: 4vw;
+    }
+
+    .fone img{
+        width: 4vw;
+    }
+}
